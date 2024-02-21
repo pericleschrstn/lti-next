@@ -1,3 +1,3 @@
 export default function Login() {
-  return <h1>Página de login</h1>;
+  return <h1>Rota de login</h1>;
 }

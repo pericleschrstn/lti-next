@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My LTI Next App",
+  title: "LTI App",
   description: "Em desenvolvimento...",
 };
 
