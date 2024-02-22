@@ -1,15 +1,15 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Check } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="p-5">
       <h1 className="text-3xl text-primary font-bold">Hello World</h1>
-      <Accordion type="single" collapsible>
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <Alert variant={"warning"}>
+        <Check className="h-4 w-4"></Check>
+        <AlertTitle>Alerta</AlertTitle>
+        <AlertDescription>Corpo do alerta...</AlertDescription>
+      </Alert>
     </div>
   );
 }
