@@ -1,23 +1,25 @@
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import List from "@/components/list";
 
 export default function Home() {
+  const listItens = [
+    {
+      title: "Olá, mundo",
+      content: "Isso é um texto...",
+    },
+    {
+      title: "Titulo 2",
+      content: "Outro texto...",
+    },
+    {
+      title: "Titulo 3",
+      content: "Mais um texto...",
+    },
+  ];
+
   return (
     <div className="p-5">
       <h1 className="text-3xl text-primary font-bold mb-3">Hello World</h1>
-      <div>
-        <Card className="hover:bg-primary">
-          <CardHeader>
-            <CardTitle>Card Title</CardTitle>
-            <CardDescription>Card Description</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p>Card Content</p>
-          </CardContent>
-          <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter>
-        </Card>
-      </div>
+      <List items={listItens} />
     </div>
   );
 }
