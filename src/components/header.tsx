@@ -4,7 +4,7 @@ import React from "react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
-const headerVariants = cva("p-3 sticky z-10 top-0", {
+const headerVariants = cva("p-3 sticky z-20 top-0", {
   variants: {
     intent: {
       primary: "bg-primary",
@@ -24,7 +24,7 @@ interface HeaderProps extends VariantProps<typeof headerVariants> {
 export default function Header({ intent, logotipoSrc, ...props }: HeaderProps) {
   return (
     <header className={headerVariants({ intent })} {...props}>
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto container">
         <nav className="flex justify-between">
           <Image src={logotipoSrc} alt="Logotipo"></Image>
           <Sheet>
