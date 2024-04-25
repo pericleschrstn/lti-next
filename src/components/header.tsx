@@ -4,7 +4,7 @@ import React from "react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
-const headerVariants = cva("p-3", {
+const headerVariants = cva("p-3 sticky z-10 top-0", {
   variants: {
     intent: {
       primary: "bg-primary",
