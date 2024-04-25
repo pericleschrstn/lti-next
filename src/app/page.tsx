@@ -1,6 +1,3 @@
-import Header from "@/components/header";
-import logotipo from "@/assets/logotipo-fiemg-white.svg";
-
-export default function Home() {
-  return <Header logotipoSrc={logotipo} />;
+export default function HomePage() {
+  return <h1>Home</h1>;
 }

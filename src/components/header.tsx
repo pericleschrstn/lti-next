@@ -9,6 +9,7 @@ const headerVariants = cva("p-3", {
     intent: {
       primary: "bg-primary",
       secondary: "bg-secondary",
+      white: "bg-white",
     },
   },
   defaultVariants: {
