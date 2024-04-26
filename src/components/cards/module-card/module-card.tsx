@@ -3,22 +3,31 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Timer } from "lucide-react";
 import Image from "next/image";
 
-export default function ModuleCard() {
+interface ModuleCardProps {
+  id: number;
+  title: string;
+  resume: string;
+  duration: string;
+  category: string;
+  image: string;
+}
+
+export default function ModuleCard({ id, title, resume, duration, category, image }: ModuleCardProps) {
   return (
-    <Card>
+    <Card className="h-full">
       <CardHeader className="grid">
-        <Badge className="justify-self-start">Módulo 1</Badge>
+        <Badge className="justify-self-start">{category}</Badge>
       </CardHeader>
       <CardContent className="p-0">
-        <Image src={"/images/module-1.jpg"} alt="Thumb" width={1000} height={563} />
+        <Image src={image} alt={title} width={1500} height={1500} sizes="80vw" />
         <div className="p-6">
-          <CardTitle className="text-primary mb-3">Game design</CardTitle>
-          <p>O que são games e o que eles podem influenciar em nossas vidas.</p>
+          <CardTitle className="text-primary mb-3">{title}</CardTitle>
+          <p>{resume}</p>
         </div>
       </CardContent>
       <CardFooter>
         <Timer className="w-4 h-4 mr-1 relative -top-px" />
-        <p className="text-sm">30 minutos</p>
+        <p className="text-sm">{duration}</p>
       </CardFooter>
     </Card>
   );
