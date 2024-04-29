@@ -14,7 +14,7 @@ interface ModuleCardProps {
 
 export default function ModuleCard({ id, title, resume, duration, category, image }: ModuleCardProps) {
   return (
-    <Card className="h-full">
+    <Card className="h-full shadow-xl hover:border-primary/50">
       <CardHeader className="grid">
         <Badge className="justify-self-start">{category}</Badge>
       </CardHeader>
