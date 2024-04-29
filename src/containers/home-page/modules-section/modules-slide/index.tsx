@@ -10,7 +10,7 @@ export default function ModulesSlide() {
   return (
     <Splide
       hasTrack={false}
-      options={{ perPage: 2, gap: "1.5rem", pagination: false }}
+      options={{ perPage: 3, gap: "1.5rem", pagination: false }}
       aria-label="Módulos deste curso"
       className="flex-col flex"
     >
@@ -24,6 +24,7 @@ export default function ModulesSlide() {
               duration={m.duration}
               category={m.category}
               image={m.image}
+              url={m.url}
             />
           </SplideSlide>
         ))}

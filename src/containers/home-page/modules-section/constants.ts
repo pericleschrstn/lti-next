@@ -5,6 +5,7 @@ export type ModulesType = {
   duration: string;
   category: string;
   image: string;
+  url: string;
 };
 
 export const modules: ModulesType[] = [
@@ -15,6 +16,7 @@ export const modules: ModulesType[] = [
     duration: "30 minutos",
     category: "Módulo 1",
     image: "/images/module-1.jpg",
+    url: "/modulos/game-design",
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ export const modules: ModulesType[] = [
     duration: "20 minutos",
     category: "Módulo 2",
     image: "/images/module-2.jpg",
+    url: "/modulos/gamificacao",
   },
   {
     id: 3,
@@ -31,5 +34,15 @@ export const modules: ModulesType[] = [
     duration: "40 minutos",
     category: "Módulo 3",
     image: "/images/module-3.jpg",
+    url: "/modulos/jogos-mobile",
+  },
+  {
+    id: 4,
+    title: "Jogos AAA x jogos indies",
+    resume: "Entenda a diferença entre jogos AAA e indies.",
+    duration: "20 minutos",
+    category: "Módulo 4",
+    image: "/images/module-3.jpg",
+    url: "/modulos/jogos-aaa-jogos-indies",
   },
 ];
