@@ -14,7 +14,7 @@ export default function ModulesSlide() {
       aria-label="Módulos deste curso"
       className="flex-col flex"
     >
-      <SplideTrack>
+      <SplideTrack className="py-5">
         {modules.map((m, i) => (
           <SplideSlide key={i}>
             <ModuleCard
