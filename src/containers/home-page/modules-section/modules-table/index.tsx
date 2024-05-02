@@ -3,7 +3,7 @@ import { modules } from "../constants";
 
 export default function ModulesTable() {
   return (
-    <div className="shadow-xl rounded border z-10 relative bg-white">
+    <div className="shadow-xl rounded-lg border z-10 relative bg-white">
       <Table>
         <TableHeader>
           <TableRow>

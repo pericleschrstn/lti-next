@@ -28,8 +28,10 @@ export default function ModuleSection() {
           </div>
           <div className="col-start-2 col-span-10">{showGrid ? <ModulesSlide /> : <ModulesTable />}</div>
           <div
-            className={`col-span-12 rounded-t-lg ${showGrid ? "-mt-32" : "-mt-6"}`}
-            style={{ background: "#53B1D7", height: "300px" }}
+            className={`col-span-12 rounded-t-md bg-gradient-to-r from-info to-primary ${
+              showGrid ? "-mt-32" : "-mt-6"
+            }`}
+            style={{ height: "300px" }}
           ></div>
         </div>
       </div>
