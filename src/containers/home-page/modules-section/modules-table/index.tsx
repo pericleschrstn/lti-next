@@ -12,15 +12,15 @@ export default function ModulesTable() {
             <TableHead className="text-right">Status</TableHead>
           </TableRow>
         </TableHeader>
-        {modules.map((m, i) => (
-          <TableBody key={i}>
-            <TableRow>
-              <TableCell className="font-medium">{m.category}</TableCell>
+        <TableBody>
+          {modules.map((m, i) => (
+            <TableRow key={i}>
+              <TableCell className="font-medium text-primary">{m.category}</TableCell>
               <TableCell>{m.title}</TableCell>
               <TableCell className="text-right">Concluído</TableCell>
             </TableRow>
-          </TableBody>
-        ))}
+          ))}
+        </TableBody>
       </Table>
     </div>
   );

@@ -1,16 +1,18 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { List } from "lucide-react";
+import { Grid2X2, List } from "lucide-react";
 import ModulesSlide from "@/containers/home-page/modules-section/modules-slide/index";
 import React from "react";
 import ModulesTable from "./modules-table";
 
 export default function ModuleSection() {
   const [showGrid, setShowGrid] = React.useState(true);
+  const [icon, setIcon] = React.useState(true);
 
   function handleToggleComponent() {
     setShowGrid((currentView) => !currentView);
+    setIcon((currentIcon) => !currentIcon);
   }
 
   return (
@@ -20,7 +22,7 @@ export default function ModuleSection() {
           <div className="col-start-2 col-span-10 flex justify-between items-center mb-6">
             <h2 className="text-3xl text-primary">Módulos deste curso:</h2>
             <Button onClick={handleToggleComponent}>
-              <List className="mr-2 h-4 w-4" />
+              {icon ? <List className="mr-2 h-4 w-4" /> : <Grid2X2 className="mr-2 h-4 w-4" />}
               Visualização
             </Button>
           </div>
