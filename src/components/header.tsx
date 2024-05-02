@@ -7,14 +7,14 @@ import Link from "next/link";
 
 const headerVariants = cva("p-3 sticky z-20 top-0", {
   variants: {
-    intent: {
+    variant: {
       primary: "bg-primary",
       secondary: "bg-secondary",
       white: "bg-white",
     },
   },
   defaultVariants: {
-    intent: "primary",
+    variant: "primary",
   },
 });
 
@@ -22,9 +22,9 @@ interface HeaderProps extends VariantProps<typeof headerVariants> {
   logotipoSrc: string;
 }
 
-export default function Header({ intent, logotipoSrc, ...props }: HeaderProps) {
+export default function Header({ variant, logotipoSrc, ...props }: HeaderProps) {
   return (
-    <header className={headerVariants({ intent })} {...props}>
+    <header className={headerVariants({ variant })} {...props}>
       <div className="mx-auto container">
         <nav className="flex justify-between">
           <Link href={"/"}>
