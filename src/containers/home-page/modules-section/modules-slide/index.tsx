@@ -10,7 +10,16 @@ export default function ModulesSlide() {
   return (
     <Splide
       hasTrack={false}
-      options={{ perPage: 3, gap: "1.5rem", pagination: false }}
+      options={{
+        perPage: 3,
+        gap: "1.5rem",
+        pagination: false,
+        breakpoints: {
+          640: {
+            perPage: 1,
+          },
+        },
+      }}
       aria-label="Módulos deste curso"
       className="flex-col flex"
     >

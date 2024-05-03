@@ -1,4 +1,4 @@
-import styles from "@/components/banner.module.css";
+import styles from "@/components/banner.module.scss";
 
 export default function Banner({ subtitle, title }: { subtitle: string; title: string }) {
   return (
