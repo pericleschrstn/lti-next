@@ -3,7 +3,7 @@ import ModuleCard from "@/components/cards/module-card/module-card";
 import { modules } from "../constants";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import "./index.css";
+import "./modules-slide.scss";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ModulesSlide() {

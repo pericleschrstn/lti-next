@@ -1,0 +1,24 @@
+.splide__arrows {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.splide__arrow {
+  position: relative !important;
+  background: #fff;
+  &.splide__arrow--prev {
+    left: 0;
+    & svg {
+      transform: none;
+    }
+  }
+  &.splide__arrow--next {
+    right: 0;
+  }
+  & svg {
+    fill: none !important;
+  }
+}

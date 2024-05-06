@@ -2,9 +2,9 @@
 
 import { Button } from "@/components/ui/button";
 import { Grid2X2, List } from "lucide-react";
-import ModulesSlide from "@/containers/home-page/modules-section/modules-slide/index";
+import ModulesSlide from "@/containers/home-page/modules-section/modules-slide/modules-slide";
 import React from "react";
-import ModulesTable from "./modules-table";
+import ModulesTable from "./modules-table/modules-table";
 
 export default function ModuleSection() {
   const [showGrid, setShowGrid] = React.useState(true);

@@ -1,6 +1,6 @@
 import Banner from "@/components/banner";
-import ModuleSection from "@/containers/home-page/modules-section";
-import SecondarySection from "@/containers/home-page/secondary-section";
+import ModuleSection from "@/containers/home-page/modules-section/modules-section";
+import SecondarySection from "@/containers/home-page/secondary-section/secondary-section";
 
 export default function HomePage() {
   return (

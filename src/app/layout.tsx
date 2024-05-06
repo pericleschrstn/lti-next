@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/styles/styles.scss";
 import Header from "@/components/header";
 import logotipo from "@/assets/logotipo-fiemg-white.svg";
 import { fontInter } from "@/functions/font";
