@@ -22,7 +22,7 @@ export default function ModuleCard({ id, title, resume, duration, category, imag
           <Badge className="justify-self-start">{category}</Badge>
         </CardHeader>
         <CardContent className="p-0">
-          <Image src={image} alt={title} width={1500} height={1500} sizes="80vw" />
+          <Image src={image} alt={title} width={1000} height={1000} sizes="80vw" />
           <div className="p-6">
             <CardTitle className="text-primary mb-3">{title}</CardTitle>
             <p>{resume}</p>
