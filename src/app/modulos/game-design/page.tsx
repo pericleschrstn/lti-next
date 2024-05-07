@@ -1,3 +1,5 @@
+import HeroSection from "@/containers/module-page/hero-section/hero-section";
+
 export default function Module1Page() {
-  return <p>Módulo 1</p>;
+  return <HeroSection />;
 }
